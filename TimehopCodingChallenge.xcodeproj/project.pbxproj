@@ -14,6 +14,7 @@
 		FD92AB9F20CF2BB900B2756B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD92AB9D20CF2BB900B2756B /* LaunchScreen.storyboard */; };
 		FD92ABAA20CF2BB900B2756B /* TimehopCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92ABA920CF2BB900B2756B /* TimehopCodingChallengeTests.swift */; };
 		FD92ABB520CF2BB900B2756B /* TimehopCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92ABB420CF2BB900B2756B /* TimehopCodingChallengeUITests.swift */; };
+		FD92ABC320CF30BC00B2756B /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92ABC220CF30BC00B2756B /* HTTPRequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FD92ABB020CF2BB900B2756B /* TimehopCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimehopCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD92ABB420CF2BB900B2756B /* TimehopCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimehopCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		FD92ABB620CF2BB900B2756B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD92ABC220CF30BC00B2756B /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				FD92AB9B20CF2BB900B2756B /* Assets.xcassets */,
 				FD92AB9D20CF2BB900B2756B /* LaunchScreen.storyboard */,
 				FD92ABA020CF2BB900B2756B /* Info.plist */,
+				FD92ABC220CF30BC00B2756B /* HTTPRequestManager.swift */,
 			);
 			path = TimehopCodingChallenge;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				FD92AB9720CF2BB800B2756B /* ViewController.swift in Sources */,
 				FD92AB9520CF2BB800B2756B /* AppDelegate.swift in Sources */,
+				FD92ABC320CF30BC00B2756B /* HTTPRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let httpController:HTTPRequestController = HTTPRequestController()
+        httpController.makeHTTPRequestForImageSearch(searchTerm: "happy") { (data, error) in
+            
+            if let result:Data = data {
+                let str:String = String(data: result, encoding: String.Encoding.utf8)!
+                print(str)
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
