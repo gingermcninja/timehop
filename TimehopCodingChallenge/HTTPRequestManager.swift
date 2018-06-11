@@ -9,13 +9,19 @@
 import Foundation
 
 class HTTPRequestController {
+    
+    var currentTask:URLSessionTask? = nil
+    
     let endpoint:String = "https://api.giphy.com/v1/gifs/search?api_key=LI6YQkHbry3DO0tFA63mB1jm9lGAHyBu&q=&limit=25&offset=0&rating=G&lang=en"
     
     public func makeHTTPRequestForImageSearch(searchTerm:String, completionHandler:@escaping (_ data:Data?, _ error:Error?) -> Void) {
         
         if let endpointURL = URL(string:endpoint+"&q="+searchTerm) {
             let request = URLRequest(url: endpointURL)
-            URLSession.shared.dataTask(with: request) {data, _, error in
+            if let existingTask = self.currentTask {
+                existingTask.cancel()
+            }
+            self.currentTask = URLSession.shared.dataTask(with: request) {data, _, error in
                 var imageData:Data?
                 if let apiError = error {
                     print("Error retrieving API data, \(apiError.localizedDescription)")
@@ -25,7 +31,10 @@ class HTTPRequestController {
                 }
                 completionHandler(imageData, error)
                 return
-                }.resume()
+                }
+            if let task = self.currentTask {
+                task.resume()
+            }
         }
     }
 }
