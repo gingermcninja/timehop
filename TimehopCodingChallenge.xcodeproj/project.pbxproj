@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD92AB9520CF2BB800B2756B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92AB9420CF2BB800B2756B /* AppDelegate.swift */; };
+		FD92AB9720CF2BB800B2756B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92AB9620CF2BB800B2756B /* ViewController.swift */; };
+		FD92AB9A20CF2BB800B2756B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD92AB9820CF2BB800B2756B /* Main.storyboard */; };
+		FD92AB9C20CF2BB900B2756B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD92AB9B20CF2BB900B2756B /* Assets.xcassets */; };
+		FD92AB9F20CF2BB900B2756B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD92AB9D20CF2BB900B2756B /* LaunchScreen.storyboard */; };
+		FD92ABAA20CF2BB900B2756B /* TimehopCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92ABA920CF2BB900B2756B /* TimehopCodingChallengeTests.swift */; };
+		FD92ABB520CF2BB900B2756B /* TimehopCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92ABB420CF2BB900B2756B /* TimehopCodingChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD92ABA620CF2BB900B2756B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD92AB8920CF2BB800B2756B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD92AB9020CF2BB800B2756B;
+			remoteInfo = TimehopCodingChallenge;
+		};
+		FD92ABB120CF2BB900B2756B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD92AB8920CF2BB800B2756B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD92AB9020CF2BB800B2756B;
+			remoteInfo = TimehopCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD92AB9120CF2BB800B2756B /* TimehopCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimehopCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD92AB9420CF2BB800B2756B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD92AB9620CF2BB800B2756B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD92AB9920CF2BB800B2756B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD92AB9B20CF2BB900B2756B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD92AB9E20CF2BB900B2756B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD92ABA020CF2BB900B2756B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD92ABA520CF2BB900B2756B /* TimehopCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimehopCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD92ABA920CF2BB900B2756B /* TimehopCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimehopCodingChallengeTests.swift; sourceTree = "<group>"; };
+		FD92ABAB20CF2BB900B2756B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD92ABB020CF2BB900B2756B /* TimehopCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimehopCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD92ABB420CF2BB900B2756B /* TimehopCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimehopCodingChallengeUITests.swift; sourceTree = "<group>"; };
+		FD92ABB620CF2BB900B2756B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD92AB8E20CF2BB800B2756B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD92ABA220CF2BB900B2756B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD92ABAD20CF2BB900B2756B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD92AB8820CF2BB800B2756B = {
+			isa = PBXGroup;
+			children = (
+				FD92AB9320CF2BB800B2756B /* TimehopCodingChallenge */,
+				FD92ABA820CF2BB900B2756B /* TimehopCodingChallengeTests */,
+				FD92ABB320CF2BB900B2756B /* TimehopCodingChallengeUITests */,
+				FD92AB9220CF2BB800B2756B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD92AB9220CF2BB800B2756B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD92AB9120CF2BB800B2756B /* TimehopCodingChallenge.app */,
+				FD92ABA520CF2BB900B2756B /* TimehopCodingChallengeTests.xctest */,
+				FD92ABB020CF2BB900B2756B /* TimehopCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD92AB9320CF2BB800B2756B /* TimehopCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				FD92AB9420CF2BB800B2756B /* AppDelegate.swift */,
+				FD92AB9620CF2BB800B2756B /* ViewController.swift */,
+				FD92AB9820CF2BB800B2756B /* Main.storyboard */,
+				FD92AB9B20CF2BB900B2756B /* Assets.xcassets */,
+				FD92AB9D20CF2BB900B2756B /* LaunchScreen.storyboard */,
+				FD92ABA020CF2BB900B2756B /* Info.plist */,
+			);
+			path = TimehopCodingChallenge;
+			sourceTree = "<group>";
+		};
+		FD92ABA820CF2BB900B2756B /* TimehopCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD92ABA920CF2BB900B2756B /* TimehopCodingChallengeTests.swift */,
+				FD92ABAB20CF2BB900B2756B /* Info.plist */,
+			);
+			path = TimehopCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		FD92ABB320CF2BB900B2756B /* TimehopCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD92ABB420CF2BB900B2756B /* TimehopCodingChallengeUITests.swift */,
+				FD92ABB620CF2BB900B2756B /* Info.plist */,
+			);
+			path = TimehopCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD92AB9020CF2BB800B2756B /* TimehopCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD92ABB920CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallenge" */;
+			buildPhases = (
+				FD92AB8D20CF2BB800B2756B /* Sources */,
+				FD92AB8E20CF2BB800B2756B /* Frameworks */,
+				FD92AB8F20CF2BB800B2756B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimehopCodingChallenge;
+			productName = TimehopCodingChallenge;
+			productReference = FD92AB9120CF2BB800B2756B /* TimehopCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD92ABA420CF2BB900B2756B /* TimehopCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD92ABBC20CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallengeTests" */;
+			buildPhases = (
+				FD92ABA120CF2BB900B2756B /* Sources */,
+				FD92ABA220CF2BB900B2756B /* Frameworks */,
+				FD92ABA320CF2BB900B2756B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD92ABA720CF2BB900B2756B /* PBXTargetDependency */,
+			);
+			name = TimehopCodingChallengeTests;
+			productName = TimehopCodingChallengeTests;
+			productReference = FD92ABA520CF2BB900B2756B /* TimehopCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD92ABAF20CF2BB900B2756B /* TimehopCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD92ABBF20CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallengeUITests" */;
+			buildPhases = (
+				FD92ABAC20CF2BB900B2756B /* Sources */,
+				FD92ABAD20CF2BB900B2756B /* Frameworks */,
+				FD92ABAE20CF2BB900B2756B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD92ABB220CF2BB900B2756B /* PBXTargetDependency */,
+			);
+			name = TimehopCodingChallengeUITests;
+			productName = TimehopCodingChallengeUITests;
+			productReference = FD92ABB020CF2BB900B2756B /* TimehopCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD92AB8920CF2BB800B2756B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Paul McGrath";
+				TargetAttributes = {
+					FD92AB9020CF2BB800B2756B = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					FD92ABA420CF2BB900B2756B = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = FD92AB9020CF2BB800B2756B;
+					};
+					FD92ABAF20CF2BB900B2756B = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = FD92AB9020CF2BB800B2756B;
+					};
+				};
+			};
+			buildConfigurationList = FD92AB8C20CF2BB800B2756B /* Build configuration list for PBXProject "TimehopCodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD92AB8820CF2BB800B2756B;
+			productRefGroup = FD92AB9220CF2BB800B2756B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD92AB9020CF2BB800B2756B /* TimehopCodingChallenge */,
+				FD92ABA420CF2BB900B2756B /* TimehopCodingChallengeTests */,
+				FD92ABAF20CF2BB900B2756B /* TimehopCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD92AB8F20CF2BB800B2756B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD92AB9F20CF2BB900B2756B /* LaunchScreen.storyboard in Resources */,
+				FD92AB9C20CF2BB900B2756B /* Assets.xcassets in Resources */,
+				FD92AB9A20CF2BB800B2756B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD92ABA320CF2BB900B2756B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD92ABAE20CF2BB900B2756B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD92AB8D20CF2BB800B2756B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD92AB9720CF2BB800B2756B /* ViewController.swift in Sources */,
+				FD92AB9520CF2BB800B2756B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD92ABA120CF2BB900B2756B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD92ABAA20CF2BB900B2756B /* TimehopCodingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD92ABAC20CF2BB900B2756B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD92ABB520CF2BB900B2756B /* TimehopCodingChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD92ABA720CF2BB900B2756B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD92AB9020CF2BB800B2756B /* TimehopCodingChallenge */;
+			targetProxy = FD92ABA620CF2BB900B2756B /* PBXContainerItemProxy */;
+		};
+		FD92ABB220CF2BB900B2756B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD92AB9020CF2BB800B2756B /* TimehopCodingChallenge */;
+			targetProxy = FD92ABB120CF2BB900B2756B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD92AB9820CF2BB800B2756B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD92AB9920CF2BB800B2756B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD92AB9D20CF2BB900B2756B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD92AB9E20CF2BB900B2756B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD92ABB720CF2BB900B2756B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD92ABB820CF2BB900B2756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD92ABBA20CF2BB900B2756B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimehopCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingermcninja.TimehopCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD92ABBB20CF2BB900B2756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimehopCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingermcninja.TimehopCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD92ABBD20CF2BB900B2756B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimehopCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingermcninja.TimehopCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimehopCodingChallenge.app/TimehopCodingChallenge";
+			};
+			name = Debug;
+		};
+		FD92ABBE20CF2BB900B2756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimehopCodingChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingermcninja.TimehopCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimehopCodingChallenge.app/TimehopCodingChallenge";
+			};
+			name = Release;
+		};
+		FD92ABC020CF2BB900B2756B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimehopCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingermcninja.TimehopCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimehopCodingChallenge;
+			};
+			name = Debug;
+		};
+		FD92ABC120CF2BB900B2756B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TimehopCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gingermcninja.TimehopCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimehopCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD92AB8C20CF2BB800B2756B /* Build configuration list for PBXProject "TimehopCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD92ABB720CF2BB900B2756B /* Debug */,
+				FD92ABB820CF2BB900B2756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD92ABB920CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD92ABBA20CF2BB900B2756B /* Debug */,
+				FD92ABBB20CF2BB900B2756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD92ABBC20CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD92ABBD20CF2BB900B2756B /* Debug */,
+				FD92ABBE20CF2BB900B2756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD92ABBF20CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD92ABC020CF2BB900B2756B /* Debug */,
+				FD92ABC120CF2BB900B2756B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD92AB8920CF2BB800B2756B /* Project object */;
+}
