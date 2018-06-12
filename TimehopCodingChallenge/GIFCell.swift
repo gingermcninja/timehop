@@ -8,8 +8,25 @@
 
 import UIKit
 
+/**
+ This class is used to display an individual gif image in our collection view
+ */
 class GIFCell:UICollectionViewCell {
+    /**
+     UIImageView for displaying the final .gif image
+    */
+    @IBOutlet var imageView:UIImageView!
+    
+    /**
+     HTTPRequestController object for retrieving the raw image data
+    */
     let requestManager:HTTPRequestController = HTTPRequestController()
+    
+    /**
+     The URL of the GIF in string format.
+     
+     - Note: Setting this parameter will call the HTTPRequestController.getImageDataFromSource() function and set the image in the imageview
+    */
     var imageSource:String? {
         didSet {
             if let imageSrc = imageSource {
@@ -25,5 +42,5 @@ class GIFCell:UICollectionViewCell {
             }
         }
     }
-    @IBOutlet var imageView:UIImageView!
+
 }

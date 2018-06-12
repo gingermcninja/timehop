@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController, UISearchResultsUpdating, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    /**
+     Collection view to display the GIF images
+    */
     @IBOutlet var collectionView:UICollectionView!
-    @IBOutlet var searchBar:UISearchBar!
+    
+    /**
+     Search controller to manage our searches
+    */
     var searchController:UISearchController = UISearchController(searchResultsController: nil)
     
-    let gifRepo = GIFRepository()
+    /**
+     GIFRepository object to manage our list of GIFs
+    */
+    let gifRepo:GIFRepository = GIFRepository()
 
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text {
@@ -32,10 +41,14 @@ class ViewController: UIViewController, UISearchResultsUpdating, UICollectionVie
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search GIFs"
         navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
         definesPresentationContext = true
         loadTrendingGIFs()
     }
     
+    /**
+     Loads the trending GIFs and reloads the collection view
+    */
     private func loadTrendingGIFs() {
         gifRepo.loadTrendingGIFs { (success, error) in
             if let err = error {
@@ -49,6 +62,11 @@ class ViewController: UIViewController, UISearchResultsUpdating, UICollectionVie
         }
     }
     
+    /**
+     Performs a search of GIFs based on the input search term
+
+     - parameter term: The string to search for
+    */
     private func performSearch(with term:String) {
         gifRepo.loadGIFsWithSearchTerm(term: term) { (success, error) in
             if let err = error {
