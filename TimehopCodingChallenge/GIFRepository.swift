@@ -26,7 +26,7 @@ class GIFRepository {
         }
     }
     
-    func loadTrendingGIFS(completionHandler:@escaping (_ success:Bool, _ error:Error?) -> Void) {
+    func loadTrendingGIFs(completionHandler:@escaping (_ success:Bool, _ error:Error?) -> Void) {
         httpController.makeHTTPRequestForTrending { (data, error) in
             if let result:Data = data {
                 do {

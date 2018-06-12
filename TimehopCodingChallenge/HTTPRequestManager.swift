@@ -16,7 +16,7 @@ class HTTPRequestController {
     let trendingEndpoint:URL = URL(string: "https://api.giphy.com/v1/gifs/trending?api_key=LI6YQkHbry3DO0tFA63mB1jm9lGAHyBu&q=&limit=25&offset=0&rating=G&lang=en")!
     
     public func makeHTTPRequestForImageSearch(searchTerm:String, completionHandler:@escaping (_ data:Data?, _ error:Error?) -> Void) {
-        if let endpointURL = URL(string:searchEndpoint+"&q="+searchTerm) {
+        if let endpointURL = URL(string:searchEndpoint+"&q="+searchTerm.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) {
             callGiphyAPIWithURL(url: endpointURL, completionHandler: completionHandler)
         }
     }
@@ -33,13 +33,17 @@ class HTTPRequestController {
         }
         self.currentTask = URLSession.shared.dataTask(with: request) {data, _, error in
             var imageData:Data?
+            var httpError:Error?
             if let apiError = error {
-                print("Error retrieving API data, \(apiError.localizedDescription)")
+                if (apiError as NSError).code != -999 {
+                    print("Error retrieving API data, \(apiError.localizedDescription)")
+                    httpError = apiError
+                }
             }
             if let result = data {
                 imageData = result
             }
-            completionHandler(imageData, error)
+            completionHandler(imageData, httpError)
             return
         }
         if let task = self.currentTask {

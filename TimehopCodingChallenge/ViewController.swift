@@ -8,13 +8,36 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController {
-
+class ViewController: UIViewController, UISearchResultsUpdating, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet var collectionView:UICollectionView!
+    @IBOutlet var searchBar:UISearchBar!
+    var searchController:UISearchController = UISearchController(searchResultsController: nil)
+    
     let gifRepo = GIFRepository()
+
+    func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text {
+            if(searchText.isEmpty){
+                loadTrendingGIFs()
+            } else {
+                performSearch(with: searchText)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        gifRepo.loadTrendingGIFS { (success, error) in
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search GIFs"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        loadTrendingGIFs()
+    }
+    
+    private func loadTrendingGIFs() {
+        gifRepo.loadTrendingGIFs { (success, error) in
             if let err = error {
                 print(err.localizedDescription)
             }
@@ -23,30 +46,35 @@ class ViewController: UICollectionViewController {
                     self.collectionView?.reloadData()
                 }
             }
-            
         }
-        
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    private func performSearch(with term:String) {
+        gifRepo.loadGIFsWithSearchTerm(term: term) { (success, error) in
+            if let err = error {
+                print(err.localizedDescription)
+            }
+            if success {
+                DispatchQueue.main.async { () -> Void in
+                    self.collectionView?.reloadData()
+                }
+            }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let gifArray = gifRepo.gifArray {
             return gifArray.count
         } else { return 0 }
     }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:GIFCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! GIFCell
         if let gifArray = gifRepo.gifArray {
             cell.imageSource = gifArray[indexPath.row].images.fixed_width.url
         }
         return cell
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
