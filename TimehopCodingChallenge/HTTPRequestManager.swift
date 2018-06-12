@@ -11,7 +11,7 @@ import Foundation
 /**
  Class to handle all HTTP requests for the project
  */
-class HTTPRequestController {
+public class HTTPRequestController {
     
     /**
     The URLSessionTask for the request currently in progress, if any
@@ -21,12 +21,12 @@ class HTTPRequestController {
     /**
     The endpoint for the search API
     */
-    let searchEndpoint:String = "https://api.giphy.com/v1/gifs/search?api_key=LI6YQkHbry3DO0tFA63mB1jm9lGAHyBu&q=&limit=25&offset=0&rating=G&lang=en"
+    private let searchEndpoint:String = "https://api.giphy.com/v1/gifs/search?api_key=LI6YQkHbry3DO0tFA63mB1jm9lGAHyBu&q=&limit=25&offset=0&rating=G&lang=en"
     
     /**
     The endpoint for the trending GIFs API
     */
-    let trendingEndpoint:URL = URL(string: "https://api.giphy.com/v1/gifs/trending?api_key=LI6YQkHbry3DO0tFA63mB1jm9lGAHyBu&q=&limit=25&offset=0&rating=G&lang=en")!
+    private let trendingEndpoint:URL = URL(string: "https://api.giphy.com/v1/gifs/trending?api_key=LI6YQkHbry3DO0tFA63mB1jm9lGAHyBu&q=&limit=25&offset=0&rating=G&lang=en")!
     
     /**
     Method to retrieve the GIFs for an input search term

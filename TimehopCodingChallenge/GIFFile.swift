@@ -11,29 +11,47 @@ import Foundation
 /**
  These structs are used to decode the JSON into a format we can use
  */
-struct GIFImagesFixedWidth: Decodable {
-    var url: String
+public struct GIFImagesFixedWidth: Decodable {
+    /**
+    Fixed width URL of GIF
+    */
+    public var url: String
 }
 
 /**
  These structs are used to decode the JSON into a format we can use
  */
-struct GIFImages: Decodable {
-    var fixed_width:GIFImagesFixedWidth
+public struct GIFImages: Decodable {
+    /**
+     Fixed width data for GIF
+    */
+    public var fixed_width:GIFImagesFixedWidth
 }
 
 /**
  These structs are used to decode the JSON into a format we can use
  */
-struct GIFFile : Decodable {
-    var id:String
-    var source:String
-    var images:GIFImages
+public struct GIFFile : Decodable {
+    /**
+    GIF id
+    */
+    public var id:String
+    /**
+     GIF source parameter
+     */
+    public var source:String
+    /**
+     GIF image information
+    */
+    public var images:GIFImages
 }
 
 /**
  These structs are used to decode the JSON into a format we can use
  */
-struct GIFData : Decodable {
-    var data:[GIFFile]
+public struct GIFData : Decodable {
+    /**
+     GIF data array
+    */
+    public var data:[GIFFile]
 }
