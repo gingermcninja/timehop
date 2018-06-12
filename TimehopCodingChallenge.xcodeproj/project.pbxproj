@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244C72E33076B2CE72C132E1 /* Pods_TimehopCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBB70F7F640DB522A1C8659 /* Pods_TimehopCodingChallengeUITests.framework */; };
+		35208FC281E1345BD6EF1B7F /* Pods_TimehopCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4CFB4BEBFC83BDEDA57E6C /* Pods_TimehopCodingChallengeTests.framework */; };
+		4C530D7497D864F5AE7CA8BC /* Pods_TimehopCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600FB7B71B66061663EBFBC9 /* Pods_TimehopCodingChallenge.framework */; };
 		FD92AB9520CF2BB800B2756B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92AB9420CF2BB800B2756B /* AppDelegate.swift */; };
 		FD92AB9720CF2BB800B2756B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92AB9620CF2BB800B2756B /* ViewController.swift */; };
 		FD92AB9A20CF2BB800B2756B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD92AB9820CF2BB800B2756B /* Main.storyboard */; };
@@ -38,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DBB70F7F640DB522A1C8659 /* Pods_TimehopCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimehopCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D9D0109ADF7274B516940D1 /* Pods-TimehopCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimehopCodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimehopCodingChallengeTests/Pods-TimehopCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		600FB7B71B66061663EBFBC9 /* Pods_TimehopCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimehopCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		975DDF1221B19FD2A2DD2C39 /* Pods-TimehopCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimehopCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimehopCodingChallenge/Pods-TimehopCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		CB89033B3043C046AD2CDE4B /* Pods-TimehopCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimehopCodingChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimehopCodingChallengeTests/Pods-TimehopCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA09BC9FDF0DDDD6D02F75B3 /* Pods-TimehopCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimehopCodingChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimehopCodingChallenge/Pods-TimehopCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		DA4CFB4BEBFC83BDEDA57E6C /* Pods_TimehopCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimehopCodingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1FDAD3BBE15E48E95562D20 /* Pods-TimehopCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimehopCodingChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimehopCodingChallengeUITests/Pods-TimehopCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FAC329899001F4D1924AC54E /* Pods-TimehopCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimehopCodingChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimehopCodingChallengeUITests/Pods-TimehopCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD92AB9120CF2BB800B2756B /* TimehopCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimehopCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD92AB9420CF2BB800B2756B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD92AB9620CF2BB800B2756B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C530D7497D864F5AE7CA8BC /* Pods_TimehopCodingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35208FC281E1345BD6EF1B7F /* Pods_TimehopCodingChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244C72E33076B2CE72C132E1 /* Pods_TimehopCodingChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6AE4288D64DA62B2C1534A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				975DDF1221B19FD2A2DD2C39 /* Pods-TimehopCodingChallenge.debug.xcconfig */,
+				DA09BC9FDF0DDDD6D02F75B3 /* Pods-TimehopCodingChallenge.release.xcconfig */,
+				CB89033B3043C046AD2CDE4B /* Pods-TimehopCodingChallengeTests.debug.xcconfig */,
+				4D9D0109ADF7274B516940D1 /* Pods-TimehopCodingChallengeTests.release.xcconfig */,
+				FAC329899001F4D1924AC54E /* Pods-TimehopCodingChallengeUITests.debug.xcconfig */,
+				E1FDAD3BBE15E48E95562D20 /* Pods-TimehopCodingChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FD92AB8820CF2BB800B2756B = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +117,8 @@
 				FD92ABA820CF2BB900B2756B /* TimehopCodingChallengeTests */,
 				FD92ABB320CF2BB900B2756B /* TimehopCodingChallengeUITests */,
 				FD92AB9220CF2BB800B2756B /* Products */,
+				E6AE4288D64DA62B2C1534A5 /* Pods */,
+				FEE70B996E56CAC8DC294EBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +167,16 @@
 			path = TimehopCodingChallengeUITests;
 			sourceTree = "<group>";
 		};
+		FEE70B996E56CAC8DC294EBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				600FB7B71B66061663EBFBC9 /* Pods_TimehopCodingChallenge.framework */,
+				DA4CFB4BEBFC83BDEDA57E6C /* Pods_TimehopCodingChallengeTests.framework */,
+				3DBB70F7F640DB522A1C8659 /* Pods_TimehopCodingChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD92ABB920CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallenge" */;
 			buildPhases = (
+				B65D020EB207F3A16AEC0FC8 /* [CP] Check Pods Manifest.lock */,
 				FD92AB8D20CF2BB800B2756B /* Sources */,
 				FD92AB8E20CF2BB800B2756B /* Frameworks */,
 				FD92AB8F20CF2BB800B2756B /* Resources */,
+				6AF6CB3AA6F2834111E20C5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD92ABBC20CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallengeTests" */;
 			buildPhases = (
+				7FE60FDBC5CB48CB7C339CF6 /* [CP] Check Pods Manifest.lock */,
 				FD92ABA120CF2BB900B2756B /* Sources */,
 				FD92ABA220CF2BB900B2756B /* Frameworks */,
 				FD92ABA320CF2BB900B2756B /* Resources */,
@@ -179,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD92ABBF20CF2BB900B2756B /* Build configuration list for PBXNativeTarget "TimehopCodingChallengeUITests" */;
 			buildPhases = (
+				BB990C2A785B8FA3F81726AD /* [CP] Check Pods Manifest.lock */,
 				FD92ABAC20CF2BB900B2756B /* Sources */,
 				FD92ABAD20CF2BB900B2756B /* Frameworks */,
 				FD92ABAE20CF2BB900B2756B /* Resources */,
@@ -262,6 +306,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AF6CB3AA6F2834111E20C5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimehopCodingChallenge/Pods-TimehopCodingChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimehopCodingChallenge/Pods-TimehopCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FE60FDBC5CB48CB7C339CF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimehopCodingChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B65D020EB207F3A16AEC0FC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimehopCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB990C2A785B8FA3F81726AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimehopCodingChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD92AB8D20CF2BB800B2756B /* Sources */ = {
@@ -444,6 +563,7 @@
 		};
 		FD92ABBA20CF2BB900B2756B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975DDF1221B19FD2A2DD2C39 /* Pods-TimehopCodingChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,6 +581,7 @@
 		};
 		FD92ABBB20CF2BB900B2756B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA09BC9FDF0DDDD6D02F75B3 /* Pods-TimehopCodingChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +599,7 @@
 		};
 		FD92ABBD20CF2BB900B2756B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB89033B3043C046AD2CDE4B /* Pods-TimehopCodingChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +620,7 @@
 		};
 		FD92ABBE20CF2BB900B2756B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9D0109ADF7274B516940D1 /* Pods-TimehopCodingChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +641,7 @@
 		};
 		FD92ABC020CF2BB900B2756B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAC329899001F4D1924AC54E /* Pods-TimehopCodingChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +661,7 @@
 		};
 		FD92ABC120CF2BB900B2756B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1FDAD3BBE15E48E95562D20 /* Pods-TimehopCodingChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
 /**
  This class is used to display an individual gif image in our collection view
@@ -32,7 +33,7 @@ public class GIFCell:UICollectionViewCell {
             if let imageSrc = imageSource, let imageURL = URL(string: imageSrc) {
                 requestManager.makeGETRequestWithURL(url: imageURL) { (data, error) in
                     var img:UIImage = UIImage(named: "timehop_icon")!
-                    if let imgData = data, let retrievedImage = UIImage(data: imgData) {
+                    if let imgData = data, let retrievedImage = UIImage.gif(data: imgData) {
                         img = retrievedImage
                     }
                     DispatchQueue.main.async{ () -> Void in

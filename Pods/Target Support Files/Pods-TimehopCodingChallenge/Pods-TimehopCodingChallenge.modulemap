@@ -1,0 +1,6 @@
+framework module Pods_TimehopCodingChallenge {
+  umbrella header "Pods-TimehopCodingChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
