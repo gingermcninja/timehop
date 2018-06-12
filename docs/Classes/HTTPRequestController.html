@@ -231,9 +231,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:22TimehopCodingChallenge21HTTPRequestControllerC22getImageDataFromSourceySS9sourceURL_y10Foundation0H0VSg_s5Error_pSgtc17completionHandlertF"></a>
-                    <a name="//apple_ref/swift/Method/getImageDataFromSource(sourceURL:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:22TimehopCodingChallenge21HTTPRequestControllerC22getImageDataFromSourceySS9sourceURL_y10Foundation0H0VSg_s5Error_pSgtc17completionHandlertF">getImageDataFromSource(sourceURL:completionHandler:)</a>
+                    <a name="/s:22TimehopCodingChallenge21HTTPRequestControllerC21makeGETRequestWithURLy10Foundation0I0V3url_yAE4DataVSg_s5Error_pSgtc17completionHandlertF"></a>
+                    <a name="//apple_ref/swift/Method/makeGETRequestWithURL(url:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:22TimehopCodingChallenge21HTTPRequestControllerC21makeGETRequestWithURLy10Foundation0I0V3url_yAE4DataVSg_s5Error_pSgtc17completionHandlertF">makeGETRequestWithURL(url:completionHandler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -241,14 +241,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Method to retrieve the raw image data for a GIF</p>
+                        <p>Mmethod to perform the HTTP GET requests</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Each call will cancel any existing calls already in progress</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getImageDataFromSource</span><span class="p">(</span><span class="nv">sourceURL</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping(_ data:Data?, _ error:Error?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makeGETRequestWithURL</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span><span class="kt">URL</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span><span class="kt">Data</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -259,12 +264,12 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>sourceURL</em>
+                                <em>url</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>URL of the GIF</p>
+                                  <p>The URL to call</p>
                                 </div>
                               </td>
                             </tr>
