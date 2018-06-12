@@ -9,5 +9,21 @@
 import UIKit
 
 class GIFCell:UICollectionViewCell {
-    @IBOutlet var imageView:UIImageView?
+    let requestManager:HTTPRequestController = HTTPRequestController()
+    var imageSource:String? {
+        didSet {
+            if let imageSrc = imageSource {
+                requestManager.getImageDataFromSource(sourceURL: imageSrc) { (data, error) in
+                    var img:UIImage = UIImage(named: "timehop_icon")!
+                    if let imgData = data, let retrievedImage = UIImage(data: imgData) {
+                        img = retrievedImage
+                    }
+                    DispatchQueue.main.async{ () -> Void in
+                        self.imageView.image = img
+                    }
+                }
+            }
+        }
+    }
+    @IBOutlet var imageView:UIImageView!
 }
