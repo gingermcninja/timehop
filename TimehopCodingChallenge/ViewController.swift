@@ -10,18 +10,24 @@ import UIKit
 
 class ViewController: UICollectionViewController {
 
+    let gifRepo = GIFRepository()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let httpController:HTTPRequestController = HTTPRequestController()
-        httpController.makeHTTPRequestForImageSearch(searchTerm: "happy") { (data, error) in
-            
-            if let result:Data = data {
-                let str:String = String(data: result, encoding: String.Encoding.utf8)!
-                print(str)
+        
+       
+        gifRepo.loadGIFsWithSearchTerm(term: "happy") { (success, error) in
+            if let err = error {
+                print(err.localizedDescription)
             }
+            print("okay")
         }
         
+    }
+    
+    
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        return cell
     }
 
     override func didReceiveMemoryWarning() {

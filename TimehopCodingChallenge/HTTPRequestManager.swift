@@ -10,7 +10,7 @@ import Foundation
 
 class HTTPRequestController {
     
-    var currentTask:URLSessionTask? = nil
+    private var currentTask:URLSessionTask? = nil
     
     let endpoint:String = "https://api.giphy.com/v1/gifs/search?api_key=LI6YQkHbry3DO0tFA63mB1jm9lGAHyBu&q=&limit=25&offset=0&rating=G&lang=en"
     
