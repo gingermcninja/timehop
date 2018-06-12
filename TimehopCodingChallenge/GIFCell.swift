@@ -25,12 +25,12 @@ public class GIFCell:UICollectionViewCell {
     /**
      The URL of the GIF in string format.
      
-     - Note: Setting this parameter will call the HTTPRequestController.getImageDataFromSource() function and set the image in the imageview
+     - Note: Setting this parameter will call the HTTPRequestController.makeGETRequestWithURL() function and set the image in the imageview. Doing so will cancel any existing request in progress.
     */
     public var imageSource:String? {
         didSet {
-            if let imageSrc = imageSource {
-                requestManager.getImageDataFromSource(sourceURL: imageSrc) { (data, error) in
+            if let imageSrc = imageSource, let imageURL = URL(string: imageSrc) {
+                requestManager.makeGETRequestWithURL(url: imageURL) { (data, error) in
                     var img:UIImage = UIImage(named: "timehop_icon")!
                     if let imgData = data, let retrievedImage = UIImage(data: imgData) {
                         img = retrievedImage

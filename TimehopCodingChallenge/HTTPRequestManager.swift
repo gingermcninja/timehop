@@ -38,7 +38,7 @@ public class HTTPRequestController {
     */
     public func makeHTTPRequestForImageSearch(searchTerm:String, completionHandler:@escaping (_ data:Data?, _ error:Error?) -> Void) {
         if let endpointURL = URL(string:searchEndpoint+"&q="+searchTerm.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) {
-            callGiphyAPIWithURL(url: endpointURL, completionHandler: completionHandler)
+            makeGETRequestWithURL(url: endpointURL, completionHandler: completionHandler)
         }
     }
     
@@ -50,20 +50,20 @@ public class HTTPRequestController {
      - parameter error: Any error created by the request
      */
     public func makeHTTPRequestForTrending(completionHandler:@escaping (_ data:Data?, _ error:Error?) -> Void) {
-        callGiphyAPIWithURL(url: trendingEndpoint, completionHandler: completionHandler)
+        makeGETRequestWithURL(url: trendingEndpoint, completionHandler: completionHandler)
     }
         
     /**
-     Private method to perform the HTTP request to the Giphy API
+     Mmethod to perform the HTTP GET requests
      
-     - parameter url: The Giphy API URL to call
+     - parameter url: The URL to call
      - parameter completionHandler: An enclosure to be executed upon completion.
      - parameter data: The data object to return
      - parameter error: Any error created by the request
      
-     - Note: Each call to the Gihpy API will cancel any existing calls already in progress
+     - Note: Each call will cancel any existing calls already in progress
     */
-    private func callGiphyAPIWithURL(url:URL, completionHandler:@escaping (_ data:Data?, _ error:Error?) -> Void) {
+    public func makeGETRequestWithURL(url:URL, completionHandler:@escaping (_ data:Data?, _ error:Error?) -> Void) {
         let request = URLRequest(url: url)
         if let existingTask = self.currentTask {
             existingTask.cancel()
@@ -85,32 +85,6 @@ public class HTTPRequestController {
         }
         if let task = self.currentTask {
             task.resume()
-        }
-    }
-    
-    /**
-     Method to retrieve the raw image data for a GIF
-     
-     - parameter sourceURL: URL of the GIF
-     - parameter completionHandler: An enclosure to be executed upon completion.
-     - parameter data: The data object to return
-     - parameter error: Any error created by the request
-    */
-    public func getImageDataFromSource(sourceURL:String, completionHandler:@escaping(_ data:Data?, _ error:Error?) -> Void) {
-
-        if let imageURL = URL(string: sourceURL) {
-            let imageRequest = URLRequest(url: imageURL)
-            URLSession.shared.dataTask(with: imageRequest) { (imageData, _, imageError) in
-                var resultData:Data?
-                if let imgError = imageError {
-                    print("Error retrieving GIF image, \(imgError.localizedDescription)")
-                }
-                if let result = imageData {
-                    resultData = result
-                }
-                completionHandler(resultData, imageError)
-                return
-            }.resume()
         }
     }
 }
